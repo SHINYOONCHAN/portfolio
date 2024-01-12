@@ -1,0 +1,17 @@
+.roundedcontainer {
+  border-radius: 5%; /* 반지름을 요소 크기의 절반으로 설정하여 원 모양으로 만듦 */
+  overflow: hidden; /* 내부 이미지가 모서리를 넘어가지 않도록 설정 */
+  width: 100; /* 요소의 너비 */
+  height: 100; /* 요소의 높이 */
+  margin-right: 20px;
+}
+
+.thColor {
+  background-color: #252932;
+}
+
+.contentbox {
+  border-radius: 8px;
+  padding: 8px;
+  border-style: none;
+}
