@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      image: true,
-    },
-  }
-  
-  module.exports = nextConfig
-  
+  images: {
+    loader: 'imgix',
+    path: '',
+  },
+}
+
+module.exports = nextConfig
