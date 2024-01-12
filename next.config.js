@@ -4,8 +4,9 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
+    disableStaticImages: true, // 변경된 부분
   },
+  // 나머지 설정...
 };
 
 module.exports = nextConfig;
