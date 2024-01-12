@@ -1,23 +1,24 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 
 export default function Header() {
-  const [activeNavItem, setActiveNavItem] = useState('home');
-  const [headerBackground, setHeaderBackground] = useState('transparent');
+  const [activeNavItem, setActiveNavItem] = useState("home");
+  const [headerBackground, setHeaderBackground] = useState("transparent");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const mobileNavRef = useRef<HTMLDivElement | null>(null);
 
   const sections = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'skill', label: 'Skill' },
-    { id: 'projects', label: 'Projects' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skill", label: "Skill" },
+    { id: "projects", label: "Projects" },
   ];
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
       setActiveNavItem(sectionId);
       setIsMobileMenuOpen(false);
     }
@@ -25,9 +26,9 @@ export default function Header() {
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      setHeaderBackground('white');
+      setHeaderBackground("white");
     } else {
-      setHeaderBackground('transparent');
+      setHeaderBackground("transparent");
     }
   };
 
@@ -46,16 +47,14 @@ export default function Header() {
 
   useEffect(() => {
     setIsMobile(window.innerWidth <= 768); // 초기 렌더링 시 모바일 여부를 설정합니다.
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
-    document.addEventListener('mousedown', handleClickOutsideMenu);
-
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    document.addEventListener("mousedown", handleClickOutsideMenu);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-      document.removeEventListener('mousedown', handleClickOutsideMenu);
-
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("mousedown", handleClickOutsideMenu);
     };
   }, []);
 
@@ -66,50 +65,57 @@ export default function Header() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
-    setActiveNavItem('home'); // 홈 섹션을 활성화합니다.
+    setActiveNavItem("home"); // 홈 섹션을 활성화합니다.
     setIsMobileMenuOpen(false);
   };
 
   return (
     <header
-      className={`header flex items-center justify-between text-center text-base font-roboto header-background-transition ${headerBackground === 'white' ? 'text-black' : 'text-white'
-        }`}
+      className={`header flex items-center justify-between text-center text-base font-roboto header-background-transition ${
+        headerBackground === "white" ? "text-black" : "text-white"
+      }`}
       style={{ backgroundColor: headerBackground }}
     >
       <div
         id="logo"
         className="logo text-center"
-        onClick={scrollToTop} // 로고 클릭 시 scrollToTop 함수 호출
-        style={{ cursor: 'pointer' }} // 마우스 커서를 포인터로 변경
+        onClick={scrollToTop}
+        style={{ cursor: "pointer" }}
       >
         Frontend Developer
       </div>
       {isMobile && (
         <div className="hamburger-icon" onClick={toggleMobileMenu}>
-          <img
-            src="image/menu.png"
+          <Image // Image 컴포넌트로 변경
+            src="/image/menu.png" // 이미지 경로
             alt="Menu Icon"
+            width={32}
+            height={32}
             style={{
-              width: '32px',
-              height: '32px',
-              filter: headerBackground === 'white' ? 'invert(0%)' : 'invert(100%)',
+              filter:
+                headerBackground === "white" ? "invert(0%)" : "invert(100%)",
             }}
           />
         </div>
       )}
-      <nav ref={mobileNavRef} className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
+      <nav
+        ref={mobileNavRef}
+        className={`mobile-nav ${isMobileMenuOpen ? "open" : ""}`}
+      >
         <ul className="navList">
           {sections.map((section) => (
             <li className="navItem" key={section.id}>
               <a
                 href={`#${section.id}`}
                 onClick={() => scrollToSection(section.id)}
-                className={`${activeNavItem !== section.id ? 'text-gray-100' : ''}`}
+                className={`${
+                  activeNavItem !== section.id ? "text-gray-100" : ""
+                }`}
                 style={{
-                  textDecoration: 'none',
-                  transition: 'color 0.3s',
+                  textDecoration: "none",
+                  transition: "color 0.3s",
                 }}
               >
                 {section.label}

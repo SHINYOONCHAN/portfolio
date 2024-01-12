@@ -17,8 +17,8 @@ export default function Home() {
           <h1 className="text-3xl font-bold mb-2">Your Name</h1>
           <p className="text-gray-500 mb-4">Web Developer</p>
           <p className="text-gray-800">
-            Hello! I'm a passionate web developer with a keen interest in creating beautiful and functional websites.
-            Let's build something amazing together.
+            {`Hello! I'm a passionate web developer with a keen interest in creating beautiful and functional websites.
+  Let's build something amazing together.`}
           </p>
         </div>
         <div className="flex justify-center mt-4">
