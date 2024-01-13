@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/out
 .pnp.js
 
 # testing
@@ -33,5 +34,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
 git.txt
