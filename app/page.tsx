@@ -151,6 +151,7 @@ export default function Home() {
             alt="자격"
             className="custom-image-style"
           />
+          
           <div className="text-container">
             <div className="text-31xl font-noto-sans-kr text-gray-300 text-center">
               <div className="card-title roboto font-light text-gray-300">
