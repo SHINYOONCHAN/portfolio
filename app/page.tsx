@@ -81,7 +81,7 @@ export default function Home() {
         <div className="contact-container-1 ">
           <Image
             src="/image/contact.png"
-            alt="contact Icon"
+            alt="contact"
             width={300}
             height={300}
             className="custom-image-style"
