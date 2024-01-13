@@ -192,7 +192,7 @@ export default function Home() {
                   </div>
                   <div className="group-2">
                     <div className="text-wrapper-2">
-                      2019-03 ~ 2025-03 (재학중)
+                      2019-03 ~ 2024-02 (졸업예정)
                     </div>
                   </div>
                   <div className="group-3">
