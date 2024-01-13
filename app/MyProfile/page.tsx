@@ -6,7 +6,7 @@ export default function Home() {
       <div className="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-8">
         <div className="flex items-center justify-center mb-4">
           <Image
-            src="/portfolio/image/profile.png" // Replace with your profile image path
+            src="/image/profile.png" // Replace with your profile image path
             alt="Profile"
             width={120}
             height={120}

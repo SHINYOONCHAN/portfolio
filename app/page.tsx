@@ -8,15 +8,15 @@ import Header from "@/app/header";
 const contact = [
   {
     title: 'Contact',
-    imageUrl: '/portfolio/image/contact.png',
+    imageUrl: '/image/contact.png',
   },
   {
     title: '자격 및 수료',
-    imageUrl: '/portfolio/image/자격.png',
+    imageUrl: '/image/자격.png',
   },
   {
     title: 'Education',
-    imageUrl: '/portfolio/image/computer.png',
+    imageUrl: '/image/computer.png',
   },
 ];
 
@@ -25,21 +25,21 @@ const projects = [
     title: '#1 Aily-AIRecycle',
     description: 'EXPO 출품',
     operatingDate: '2023-03 ~ (진행중)',
-    imageUrl: '/portfolio/image/project1.png',
+    imageUrl: '/image/project1.png',
     link: 'https://github.com/Aily-AIRecycle',
     people: '9',
   },
   {
     title: '#2 Project 준비중',
     operatingDate: '(준비중)',
-    imageUrl: '/portfolio/image/wait.jpg',
+    imageUrl: '/image/wait.jpg',
     link: 'https://github.com/Aily-AIRecycle',
     people: '1',
   },
   {
     title: '#3 Project 준비중',
     operatingDate: '(준비중)',
-    imageUrl: '/portfolio/image/wait.jpg',
+    imageUrl: '/image/wait.jpg',
     link: 'https://github.com/Aily-AIRecycle',
     people: '2',
   },
@@ -47,7 +47,7 @@ const projects = [
   {
     title: '#4 Project 준비중',
     operatingDate: '(준비중)',
-    imageUrl: '/portfolio/image/wait.jpg',
+    imageUrl: '/image/wait.jpg',
     link: 'https://github.com/Aily-AIRecycle',
     people: '1',
   },
@@ -80,7 +80,7 @@ export default function Home() {
       <div className="contact">
         <div className="contact-container-1 ">
           <Image
-            src="/portfolio/image/contact.png"
+            src="/image/contact.png"
             alt="contact"
             width={300}
             height={300}
@@ -100,7 +100,7 @@ export default function Home() {
                       alt="github"
                       width={32}
                       height={32}
-                      src="/portfolio/image/github.png"
+                      src="/image/github.png"
                     />
                     <div className="text-wrapper">
                       <a href="https://github.com/SHINYOONCHAN">바로가기＞</a>
@@ -112,7 +112,7 @@ export default function Home() {
                     <Image
                       className="img"
                       alt="gmail"
-                      src="/portfolio/image/gmail.png"
+                      src="/image/gmail.png"
                       width={32}
                       height={32}
                     />
@@ -132,7 +132,7 @@ export default function Home() {
                     <Image
                       className="rectangle-2"
                       alt="playstore"
-                      src="/portfolio/image/playstore.png"
+                      src="/image/playstore.png"
                       width={32}
                       height={32}
                     />
@@ -145,7 +145,7 @@ export default function Home() {
 
         <div className="contact-container-2">
           <Image
-            src="/portfolio/image/자격.png"
+            src="/image/자격.png"
             width={300}
             height={300}
             alt="자격"
@@ -174,7 +174,7 @@ export default function Home() {
 
         <div className="contact-container-3">
           <Image
-            src="/portfolio/image/computer.png"
+            src="/image/computer.png"
             width={300}
             height={300}
             alt="education"
@@ -266,7 +266,7 @@ export default function Home() {
                         <div className="project-scale transition-transform duration-500">
                           <div style={{ position: "relative" }}>
                             <Image
-                              src="/portfolio/image/people.png"
+                              src="/image/people.png"
                               width={32}
                               height={32}
                               alt="인원"
