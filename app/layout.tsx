@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: '신 윤찬 Yoonchan Shin',
   description: 'portfolio',
   icons: {
-    icon: '/image/profile.png',
+    icon: '/portfolio/image/profile.png',
   },
 }
 

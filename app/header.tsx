@@ -89,7 +89,7 @@ export default function Header() {
       {isMobile && (
         <div className="hamburger-icon" onClick={toggleMobileMenu}>
           <Image // Image 컴포넌트로 변경
-            src="/image/menu.png" // 이미지 경로
+            src="/portfolio/image/menu.png" // 이미지 경로
             alt="Menu Icon"
             width={32}
             height={32}

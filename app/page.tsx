@@ -8,15 +8,15 @@ import Header from "@/app/header";
 const contact = [
   {
     title: 'Contact',
-    imageUrl: '/image/contact.png',
+    imageUrl: '/portfolio/image/contact.png',
   },
   {
     title: '자격 및 수료',
-    imageUrl: '/image/자격.png',
+    imageUrl: '/portfolio/image/자격.png',
   },
   {
     title: 'Education',
-    imageUrl: '/image/computer.png',
+    imageUrl: '/portfolio/image/computer.png',
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Home() {
       <div className="contact">
         <div className="contact-container-1 ">
           <Image
-            src="/image/contact.png"
+            src="/portfolio/image/contact.png"
             alt="contact"
             width={300}
             height={300}
@@ -100,7 +100,7 @@ export default function Home() {
                       alt="github"
                       width={32}
                       height={32}
-                      src="/image/github.png"
+                      src="/portfolio/image/github.png"
                     />
                     <div className="text-wrapper">
                       <a href="https://github.com/SHINYOONCHAN">바로가기＞</a>
@@ -112,7 +112,7 @@ export default function Home() {
                     <Image
                       className="img"
                       alt="gmail"
-                      src="/image/gmail.png"
+                      src="/portfolio/image/gmail.png"
                       width={32}
                       height={32}
                     />
@@ -132,7 +132,7 @@ export default function Home() {
                     <Image
                       className="rectangle-2"
                       alt="playstore"
-                      src="/image/playstore.png"
+                      src="/portfolio/image/playstore.png"
                       width={32}
                       height={32}
                     />
@@ -145,7 +145,7 @@ export default function Home() {
 
         <div className="contact-container-2">
           <Image
-            src="/image/자격.png"
+            src="/portfolio/image/자격.png"
             width={300}
             height={300}
             alt="자격"
@@ -173,7 +173,7 @@ export default function Home() {
 
         <div className="contact-container-3">
           <Image
-            src="/image/computer.png"
+            src="/portfolio/image/computer.png"
             width={300}
             height={300}
             alt="education"
@@ -265,7 +265,7 @@ export default function Home() {
                         <div className="project-scale transition-transform duration-500">
                           <div style={{ position: "relative" }}>
                             <Image
-                              src="/image/people.png"
+                              src="/portfolio/image/people.png"
                               width={32}
                               height={32}
                               alt="인원"
