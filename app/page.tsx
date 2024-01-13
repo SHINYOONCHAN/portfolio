@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                   <div className="group-3">
                     <div className="text-wrapper-4">
-                      <a href="https://play.google.com/store/apps/developer?id=Aily">
+                      <a href="https://play.google.com/store/apps/developer?id=신윤찬">
                         바로가기＞
                       </a>
                     </div>
